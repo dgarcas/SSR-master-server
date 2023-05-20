@@ -1,0 +1,12 @@
+. Compruebe el funcionamiento de la herramienta “ipfilter”. ¿Qué respuesta obtienen las IP que tienen el acceso prohibido a nuestro sistema? Proporcione capturas de tráfico o capturas de pantalla que permitan comprobar el funcionamiento de su implementación.
+
+
+
+. ¿Qué problema de seguridad se abre, si no considerásemos acceso diferencial geográfico en el servidor cloud?
+
+. Aun aplicando la herramienta “ipfilter”, ¿cuáles son los ataques que siguen pudiendo realizarse sobre nuestra infraestructura?
+
+. Describa la manera en la que ha utilizado los cortafuegos para proteger a la infraestructura cloud de los ataques anteriormente identificados. ¿Sigue habiendo alguna vulnerabilidad al descubierto?
+
+. Si su infraestructura se lo permite, despliegue un esquema de balanceo de carga y hago una descripción detallada de su configuración y del esquema de red que ha planteado.
+Indique también si ha probado distintos algoritmos de balanceo . Proporcione un estudio de las vulnerabilidades del sistema que ha desplegado, utilizando cualquiera de las herramientas vistas en clase cómo Nmap o ZAP
