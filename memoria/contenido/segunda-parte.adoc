@@ -1,0 +1,9 @@
+. ¿Ha observado un empeoramiento del desempeño del sistema tras desplegar el protocolo seguro? Puede utilizar las mismas herramientas de benchmarking del apartado anterior.
+
+. Repita el proceso de análisis de vulnerabilidades, y observe si hay alguna mejora o empeoramiento relevante.
+
+.. Si ha tenido que modificar la configuración de los balanceadores de carga o de los servidores originales, indique en qué sentido y por qué.
+
+. A la hora de acceder al servicio web, ¿ha observado algún comportamiento anormal? ¿cree que la configuración de los certificados puede tener algo que ver? Proponga una solución si ha observado algún inconveniente.
+
+. Describa con detalle y de manera razonada el manejo que ha realizado de las peticiones HTTP que indicaban haber sido redirigidas a través de máquinas intermedias (detección de proxy)

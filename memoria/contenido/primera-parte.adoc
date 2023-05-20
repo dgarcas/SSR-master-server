@@ -1,12 +1,23 @@
 . Compruebe el funcionamiento de la herramienta “ipfilter”. ¿Qué respuesta obtienen las IP que tienen el acceso prohibido a nuestro sistema? Proporcione capturas de tráfico o capturas de pantalla que permitan comprobar el funcionamiento de su implementación.
 
+A continuación se demuestra como el asceso se ha denegado sobre una IP específica. El navegaador muestra un resultado HTTP 403.
+
+image::{imagesdir}/ip-tables-denegacion-navegador.png[title="Denegacion navegador"]
+image::{imagesdir}/iptables-denegacion-consola.png[title="Denegacion consola"]
 
 
 . ¿Qué problema de seguridad se abre, si no considerásemos acceso diferencial geográfico en el servidor cloud?
 
+
+
 . Aun aplicando la herramienta “ipfilter”, ¿cuáles son los ataques que siguen pudiendo realizarse sobre nuestra infraestructura?
+
+El sistema no esta preparado para manejar una posible denegación de servicio, aunque direcciones ip bloquedas realicen un elevado número de peticiones podrían colapsar el servidor.
+
+El despligue del servidor lo hemos hecho en un único equipo, se ha utilizado la libreria Cluster de Node, que ejecuta distintas instancias del servidor en un único host, esto supone que el servicio no es tolerante a fallos, por lo que si el host que ejecuta todas las instancias del servidor muere, el servicio también. Esto lo hacemos por facilidad a la hora de realizar la práctica.
+
 
 . Describa la manera en la que ha utilizado los cortafuegos para proteger a la infraestructura cloud de los ataques anteriormente identificados. ¿Sigue habiendo alguna vulnerabilidad al descubierto?
 
 . Si su infraestructura se lo permite, despliegue un esquema de balanceo de carga y hago una descripción detallada de su configuración y del esquema de red que ha planteado.
-Indique también si ha probado distintos algoritmos de balanceo . Proporcione un estudio de las vulnerabilidades del sistema que ha desplegado, utilizando cualquiera de las herramientas vistas en clase cómo Nmap o ZAP
+Indique también si ha probado distintos algoritmos de balanceo. Proporcione un estudio de las vulnerabilidades del sistema que ha desplegado, utilizando cualquiera de las herramientas vistas en clase cómo Nmap o ZAP
